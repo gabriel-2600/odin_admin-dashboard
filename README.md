@@ -1,6 +1,6 @@
 # Admin Dashboard
 
-Static Admin Dashboard for the The Odin Project: Admin Dashboard
+Static Admin Dashboard for The Odin Project: Admin Dashboard
 
 Live Preview:
 
