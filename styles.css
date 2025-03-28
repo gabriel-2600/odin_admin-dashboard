@@ -13,6 +13,7 @@
 :root {
   --navyblue: #000435;
   --white: #ffffff;
+  --blue-gray: #d8dae6;
 }
 
 /* CSS Reset */
@@ -45,7 +46,7 @@ select {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 0.7fr 4fr;
-  grid-template-rows: 1fr 1fr 5fr;
+  grid-template-rows: 80px 1fr 5fr;
 }
 
 .dashboard {
@@ -113,7 +114,7 @@ select {
 }
 
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .dashboard ul {
@@ -140,3 +141,51 @@ li {
 .dashboard a:hover {
   border-bottom: 1px solid var(--white);
 }
+
+/* Upper Section */
+.upper-section {
+  padding: 0 60px 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  flex: 1 1 620px;
+  max-width: 620px;
+  min-width: 220px;
+  gap: 15px;
+}
+
+.search-section input {
+  width: 100%;
+  border: 0;
+  border-radius: 15px;
+  background-color: var(--blue-gray);
+  padding: 5px 7px 5px 7px;
+  font-size: 1.1rem;
+}
+
+label[for="search-bar"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+.profile img[alt="Profile"] {
+  border-radius: 100px;
+}
+
+/* Create Content Section */
