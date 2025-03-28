@@ -12,6 +12,7 @@
 /* Variables */
 :root {
   --navyblue: #000435;
+  --light-blue: #3c4282;
   --white: #ffffff;
   --blue-gray: #d8dae6;
 }
@@ -46,7 +47,7 @@ select {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 0.7fr 4fr;
-  grid-template-rows: 80px 1fr 5fr;
+  grid-template-rows: 80px 100px 5fr;
 }
 
 .dashboard {
@@ -177,7 +178,7 @@ label[for="search-bar"] {
 .profile {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
 }
 
 h3 {
@@ -189,3 +190,44 @@ h3 {
 }
 
 /* Create Content Section */
+.create-content-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px 0 50px;
+}
+
+.greetings {
+  display: flex;
+  gap: 15px;
+}
+
+.greetings img {
+  border-radius: 100px;
+}
+
+.greetings p {
+  font-weight: 700;
+}
+
+.content-btn-container {
+  display: flex;
+  gap: 30px;
+}
+
+.content-btn-container button {
+  width: 100px;
+  padding: 8px 0;
+  border: 0;
+  border-radius: 20px;
+  background-color: var(--navyblue);
+  color: var(--white);
+  font-weight: 700;
+  border: 1px solid var(--navyblue);
+}
+
+.content-btn-container button:hover {
+  cursor: pointer;
+  background-color: var(--light-blue);
+  transition: 0.2s;
+}
